@@ -2,6 +2,6 @@
     <div class="jumbotron">
         <input [formControl]="findControl" type="text" class="form-control mr-sm-2" placeholder="Ingrese el nombre del usuario">
     </div>
-    <app-user></app-user>
-    <app-not-found></app-not-found>
+    <app-user *ngIf="user" [user]="user"></app-user>
+    <app-not-found *ngIf="error"></app-not-found>
 </div>

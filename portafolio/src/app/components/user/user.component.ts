@@ -11,6 +11,8 @@ import { User } from '../../models/user.model';
 export class UserComponent implements OnInit {
 
   constructor() { }
+  @Input()
+  user: User;
 
   ngOnInit(): void {
   }
